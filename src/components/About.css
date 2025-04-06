@@ -1,0 +1,22 @@
+#aboutme{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.card{
+  outline: none;
+}
+
+.card-img-top{
+  width: 200px;
+    height: 400px;
+}
+
+#card-text{
+  background-color: black;
+  color: beige;
+}
+
+i{font-size: 24px;
+}
