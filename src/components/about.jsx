@@ -1,6 +1,6 @@
 import React from "react";
 import profileImg from "../assets/suhani_Dp.jpg";
-import "./about.css";
+import "./About.css";
 
 export default function About() {
   return (

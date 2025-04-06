@@ -1,5 +1,5 @@
 import React from "react";
-import "./skills.css";
+import "./Skills.css";
 import clogo from "../assets/c.svg";
 import htmllogo from "../assets/html.svg";
 import javalogo from "../assets/java.svg";
