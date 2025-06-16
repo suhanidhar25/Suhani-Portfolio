@@ -1,39 +1,97 @@
-#skills {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 4rem 0; /* light gray background, adjust as needed */
-  text-align: center;
+.skills-section {
+  
+  min-height: 100vh;
+  padding: 4rem 0;
 }
 
-.tech-stack h2,
-.others h2 {
+.section-title {
+  font-size: 2rem;
   font-weight: bold;
+  color: aqua;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+.skill-card {
+  background-color: rgb(33, 33, 33);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .skill-logo {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  justify-content: space-evenly;
-  transition: transform 0.3s ease , opacity 0.3s ease;
-  border-radius: 10%;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.skill-logo:hover {
+.skill-card:hover .skill-logo {
   transform: scale(1.1);
-  opacity: 1;
 }
 
-.col-4, .col-md-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-p {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
+.skill-name {
+  font-size: 0.9rem;
   font-weight: 500;
-  color: #ffffff;
+  margin: 0;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skill-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-section {
+    padding: 2rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-name {
+    font-size: 0.8rem;
+  }
 }

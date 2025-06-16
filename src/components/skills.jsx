@@ -32,28 +32,34 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills">
-      <div className="tech-stack">
-        <h2 className="mb-4">Languages & Frameworks</h2>
-        <div className="row justify-content-center">
-          {languages.map((languages) => (
-            <div className="col-4 col-md-2 mb-4" key={languages.name}>
-              <img src={languages.img} alt={languages.name} className="skill-logo" />
-              <p className="mt-2">{languages.name}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="others">
-        <h2 className="mb-4">Databases & Tools</h2>
-        <div className="row justify-content-center">
-          {others.map((others) => (
-              <div className="col-4 col-md-2 mb-4" key={others.name}>
-                <img src={others.img} alt={others.name} className="skill-logo" />
-                <p className="mt-2">{others.name}</p>
+    <section id="skills" className="skills-section py-5">
+      <div className="container">
+        <div className="tech-stack mb-5">
+          <h2 className="section-title text-center mb-4">Languages & Frameworks</h2>
+          <div className="row g-4 justify-content-center">
+            {languages.map((language) => (
+              <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={language.name}>
+                <div className="skill-card">
+                  <img src={language.img} alt={language.name} className="skill-logo" />
+                  <p className="skill-name mt-2">{language.name}</p>
+                </div>
               </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        <div className="others">
+          <h2 className="section-title text-center mb-4">Databases & Tools</h2>
+          <div className="row g-4 justify-content-center">
+            {others.map((tool) => (
+              <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={tool.name}>
+                <div className="skill-card">
+                  <img src={tool.img} alt={tool.name} className="skill-logo" />
+                  <p className="skill-name mt-2">{tool.name}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
