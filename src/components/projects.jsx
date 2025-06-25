@@ -11,10 +11,17 @@ export default function Projects() {
       desc: 'An app which tracks the record of your to-do works in a list form',
       link: 'https://to-do-app-lac-five.vercel.app/'
     },
+
+    {
+      img: work2,
+      title: 'Personal Portfolio',
+      desc: 'A fully responsive and interactive personal portfolio website built to showcase my web development skills, projects, resume, and contact information.',
+      link: 'https://suhani-dhar.vercel.app/'
+    },
     
     {
       img: work3,
-      title: 'Weather Wise',
+      title: 'Weatherly',
       desc: 'Get accurate weather forecasts instantly, no matter where you are!',
       link: 'https://weather-app-kappa-one-87.vercel.app/'
     }
