@@ -11,12 +11,7 @@ export default function Projects() {
       desc: 'An app which tracks the record of your to-do works in a list form',
       link: 'https://to-do-app-lac-five.vercel.app/'
     },
-    {
-      img: work2,
-      title: 'Tic-Tac-Toe',
-      desc: 'A fun and interactive Tic-Tac-Toe game',
-      link: '#'
-    },
+    
     {
       img: work3,
       title: 'Weather Wise',
@@ -28,6 +23,7 @@ export default function Projects() {
   return (
     <section id="projects" className="container-fluid px-5 py-5">
       <h2 className="mb-4">My Work</h2>
+      
       <div className="row">
         {projects.map((project, index) => (
           <div className="col-md-4 mb-4" key={index}>
@@ -45,6 +41,19 @@ export default function Projects() {
             </div>
           </div>
         ))}
+
+        <div className="mb-4 text-center">
+        <a
+          href="/Suhani-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-outline-info"
+        >
+          <i className="fas fa-file-alt me-2"></i>View Resume
+        </a>
+      </div>
+
+
       </div>
     </section>
   )
