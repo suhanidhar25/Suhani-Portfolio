@@ -15,7 +15,7 @@ export default function Projects() {
     {
       img: work2,
       title: 'Personal Portfolio',
-      desc: 'A fully responsive and interactive personal portfolio website built to showcase my web development skills, projects, resume, and contact information.',
+      desc: 'A responsive personal portfolio website to showcase my skills, projects, and resume.',
       link: 'https://suhani-dhar.vercel.app/'
     },
     
@@ -31,16 +31,16 @@ export default function Projects() {
     <section id="projects" className="container-fluid px-5 py-5">
       <h2 className="mb-4">My Work</h2>
       
-      <div className="row">
+       <div className="row justify-content-center">
         {projects.map((project, index) => (
-          <div className="col-md-4 mb-4" key={index}>
-            <div className="card h-100">
+          <div className="col-12 col-sm-6 col-md-4 mb-4 d-flex" key={index}>
+            <div className="card project-card flex-fill">
               <img src={project.img} className="card-img-top" alt={project.title} />
               <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.desc}</p>
               </div>
-              <div className="card-footer">
+              <div className="card-footer bg-transparent border-0">
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <i className="fas fa-external-link-alt"></i> View
                 </a>
