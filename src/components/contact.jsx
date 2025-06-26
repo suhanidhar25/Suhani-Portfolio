@@ -15,23 +15,23 @@ export default function Contact() {
   }
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    try {
-      await fetch('https://script.google.com/macros/s/AKfycbyX1EhGcthbd1a07yyOrHcRYC_FSRa6aHIIQ07z2RVI8SPVNnwOqwGkFK0RgJzEvYko/exec', {
-        method: 'POST',
-        body: JSON.stringify(formData),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
-      setMsg('Message Sent!')
-      setFormData({ name: '', phone: '', email: '', message: '' })
-      setTimeout(() => setMsg(''), 5000)
-    } catch (error) {
-      console.error('Error!', error.message)
-      setMsg('Something went wrong!')
-    }
+  e.preventDefault();
+  try {
+    const form = new FormData();
+    Object.entries(formData).forEach(([key, value]) => form.append(key, value));
+    await fetch('https://script.google.com/macros/s/AKfycbyldUC9GOUdyVDBpYw71LzebUItvYPwVNelUdlLE5ZY8qr9nU2nQ6wr7h6UqFmMbv7X/exec', {
+      method: 'POST',
+      body: form,
+      mode:'no-cors',
+    });
+    setMsg('Message Sent!');
+    setFormData({ name: '', phone: '', email: '', message: '' });
+    setTimeout(() => setMsg(''), 5000);
+  } catch (error) {
+    console.error('Error!', error.message);
+    setMsg('Something went wrong!');
   }
+};
 
   return (
     <section id="contact" className="container-fluid px-5 py-5">
