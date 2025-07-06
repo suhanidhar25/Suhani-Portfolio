@@ -11,6 +11,9 @@ import reactlogo from "../assets/react.svg";
 import mysqllogo from "../assets/mysql.svg";
 import vscodelogo from "../assets/vscode.svg";
 import csslogo from "../assets/css-alt.svg";
+import tailwindlogo from "../assets/tailwind.png";
+import vercellogo from "../assets/vercel.png";
+import gitlogo from "../assets/git.png";
 
 export default function Skills() {
   const languages = [
@@ -21,6 +24,7 @@ export default function Skills() {
     { name: "C", img: clogo },
     { name: "Python", img: pythonlogo },
     { name: "Bootstrap", img: bslogo },
+    { name: "Tailwind", img: tailwindlogo },
     { name: "React", img: reactlogo },
     
   ];
@@ -28,7 +32,10 @@ export default function Skills() {
   const others =[
     { name: "MySQL", img: mysqllogo },
     { name: "VS Code", img: vscodelogo },
-      {name : "Git & GitHub" , img: githublogo}
+    {name : "Git" , img: gitlogo},
+      {name : "GitHub" , img: githublogo},
+      {name : "Vercel" , img: vercellogo},
+      
   ]
 
   return (

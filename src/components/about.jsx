@@ -7,14 +7,17 @@ export default function About() {
     <section id="aboutme" className="container-fluid px-3 px-sm-4 px-md-5 py-5">
       <div className="row align-items-center gy-5">
         <div className="col-lg-8 order-2 order-lg-1">
-          <h2 className="mb-4 fw-bold">About Me</h2>
-          <p className="fs-5 lh-lg text-white">
-            As an aspiring Frontend Developer and current undergraduate student, I specialize 
-            in creating responsive and intuitive web applications. My focus lies in modern web 
-            development technologies including React.js, JavaScript, and various CSS frameworks. 
-            With a strong foundation in frontend fundamentals and an eye for detail, I strive 
-            to deliver clean, efficient, and maintainable code.
-          </p>
+          <div className="fs-5 lh-lg">
+            <h2 className="mb-4 fw-bold">About Me</h2>
+            <p className="fs-5 lh-lg text-white">
+              As an aspiring Full Stack Developer and current undergraduate
+              student, I specialize in creating responsive and intuitive web
+              applications. My focus lies in modern web development technologies
+              including React.js, JavaScript, and various CSS frameworks. With a
+              strong foundation in frontend fundamentals and an eye for detail,
+              I strive to deliver clean, efficient, and maintainable code.
+            </p>
+          </div>
 
           <div className="mt-4 mt-lg-5" id="education">
             <h3 className="mb-4 fw-bold">Educational Background</h3>
@@ -36,20 +39,18 @@ export default function About() {
                 <p className="mb-1">National Gems H.S School | 2021 - 2023</p>
                 <p className="fst-italic">Scored 91%</p>
               </div>
-
-              
             </div>
           </div>
         </div>
 
         <div className="col-lg-4 order-1 order-lg-2">
           <div className="card border-0 shadow-sm profile-card mx-auto">
-          <div className="card-img-wrapper">
-            <img
-              src={profileImg}
-              className="card-img-top rounded"
-              alt="Suhani Dhar"
-            />
+            <div className="card-img-wrapper">
+              <img
+                src={profileImg}
+                className="card-img-top rounded"
+                alt="Suhani Dhar"
+              />
             </div>
             <div className="card-body text-center py-4">
               <h4 className="card-title fw-bold mb-3">Suhani Dhar</h4>
