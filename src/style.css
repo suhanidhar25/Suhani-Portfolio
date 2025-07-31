@@ -1,9 +1,9 @@
 body {
   min-height: 100vh;
-  background: linear-gradient(120deg, #232526 0%, #292929 25%, #000000 50%, #1a1a1a 75%, #000000 100%);
-  background-size: 200% 200%;
-  animation: gradientBG 18s cubic-bezier(0.4, 0.2, 0.2, 1) infinite;
-  color: aqua;
+  background: linear-gradient(120deg, #8d8d8d 0%, #171717 30%, #0c0c15 60%, #000000 100%);
+  background-size: 300% 300%;
+  animation: gradientBG 20s ease-in-out infinite;
+  color: #e0f7fa;
   font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
   letter-spacing: 0.02em;
 }
@@ -12,14 +12,8 @@ body {
   0% {
     background-position: 0% 50%;
   }
-  25% {
-    background-position: 50% 100%;
-  }
   50% {
     background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 0%;
   }
   100% {
     background-position: 0% 50%;

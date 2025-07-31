@@ -6,12 +6,6 @@ import work4 from "../assets/work4.jpg";
 
 export default function Projects() {
   const projects = [
-    {
-      img: work2,
-      title: "Personal Portfolio",
-      desc: "A responsive personal portfolio website to showcase my skills, projects, and resume.",
-      link: "https://suhani-dhar.vercel.app/",
-    },
 
     {
       img: work4,
@@ -20,19 +14,11 @@ export default function Projects() {
       link: "https://report-n-repair.vercel.app/",
     },
 
-    {
-      img: work3,
-      title: "Weatherly",
-      desc: "Get accurate weather forecasts instantly, no matter where you are!",
-      link: "https://weather-app-kappa-one-87.vercel.app/",
-    },
+    
 
-    {
-      img: work1,
-      title: "To-Do List",
-      desc: "An app which tracks the record of your to-do works in a list form",
-      link: "https://to-do-app-lac-five.vercel.app/",
-    },
+    
+
+    
   ];
 
   return (
